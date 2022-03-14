@@ -4,24 +4,24 @@ const plugin = require("tailwindcss/plugin");
 module.exports = {
   theme: {
     /* For Letter size */
-    screens: {
-      print: {"raw": "print"},
-      xsm: "500px",
-      sm: "640px",
-      md: "833px",
-      lg: "1079.5px",
-      xl: "1280px",
-    },
-    /* For A4 size */
     // screens: {
-    //   screen: {"raw": "screen"},
     //   print: {"raw": "print"},
     //   xsm: "500px",
     //   sm: "640px",
-    //   md: "811px",
-    //   lg: "1051px",
+    //   md: "833px",
+    //   lg: "1079.5px",
     //   xl: "1280px",
     // },
+    /* For A4 size */
+    screens: {
+      screen: {"raw": "screen"},
+      print: {"raw": "print"},
+      xsm: "500px",
+      sm: "640px",
+      md: "811px",
+      lg: "1051px",
+      xl: "1280px",
+    },
     extend: {
       fontFamily: {
         "firago": ["FiraGO", ...defaultTheme.fontFamily.sans],
