@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- <link rel="preload" href="./fonts/FiraGO-Regular.latin.woff2" as="font" crossorigin="anonymous"> -->
     <link href="./build.css" rel="stylesheet">
-    <title>Sajad Ebrahimi — Resume</title>
+    <title>Sajad Ebrahimi — CV </title>
 </head>
 
 <body>
@@ -728,6 +728,16 @@
     <!-- end Page -->
 
 </main>
+
+<script>
+    window.addEventListener("beforeprint", function () {
+        document.title = "SajadEbrahimi_CV"
+    })
+
+    window.addEventListener("afterprint", function () {
+        document.title = "Sajad Ebrahimi — CV"
+    })
+</script>
 
 </body>
 
